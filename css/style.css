@@ -1,0 +1,216 @@
+/*!-------------TIPOGRAFIA----------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+/*!-------------RESET---------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.boton{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color:white;
+}
+
+/*!---------HEADER-----------*/
+header h1 {
+    font-family: 'Rubik Dirt', cursive;
+    color: black;
+    font-weight: 500;
+    height: 80px;
+}
+
+header h1 span {
+    color: blue;
+}
+
+/*!---------MAIN-----------*/
+main .hero div{
+    background-image: url(../img/foto_herosection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .hero div h2{
+    font-size: 75px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+main .hero  .input-buscar {
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0;
+}
+
+main .contenedor-servicios .contenedor-items img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+main .contenedor-servicios .contenedor-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
+main .contenedor-servicios .contenedor-items .item {
+background-color: #005e7c;
+height: 300px;
+border: black 4px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+border-radius: 3% 3% 3% 3%;
+}
+
+/* main .contenedor-servicios .carrito {
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+    margin-right: -100%;
+    opacity: 0;
+}
+
+main .contenerdor-servicios .carrito .titulo-carrito {
+    background-color: #1a488e;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+main .contenedor-servicios .carrito .titulo-carrito .carrito-total {
+    background-color: #f3f3f3;
+    padding: 30px;
+}
+
+main .contenedor-servicios .carrito .titulo-carrito .carrito-total .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main .contenedor-servicios .carrito .titulo-carrito .carrito-total .btn-pagar {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #092147;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+} */
+
+/*!----------------FOOTER--------------*/
+footer{
+    background-color: #aab9cf;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+footer .piedepagina .iconos div img{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+footer .piedepagina .iconos div p {
+    margin: 0px;
+}
+
+footer .piedepagina .horarios h2 {
+    font-weight: 200;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+}
+
+footer .piedepagina{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "iconos horarios iframe"
+    "h3 h3 h3";
+}
+
+footer .piedepagina .iconos{
+    justify-self: start;
+    align-self: start;
+    margin-top: 50px;
+    grid-area: iconos;
+}
+
+footer .piedepagina .iconos div{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+}
+
+footer .piedepagina .horarios{
+    justify-self: start;
+    align-self: center;
+    grid-area: horarios;
+    margin-top: 20px;
+}
+
+footer .piedepagina iframe{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 15px;
+    grid-area: iframe;
+}
+
+footer .piedepagina h3 {
+    background-color: #005e7c;
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Dirt', cursive;
+    border: 1px solid black;
+    margin-bottom: 0%;
+    grid-area: h3;
+}
+
+footer h3 span{
+    color: black;
+}
