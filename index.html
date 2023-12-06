@@ -3,86 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PROyecto KINE</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <h1><span>PRO</span>yecto KINE</h1>
+        <h2><span>PRO</span>yecto KINE</h2>
     </header>
     <main>
         <section class="hero">
             <div>
-                <h2>Bienvenido/a</h2>
-                <input class="input-buscar" type="text" id="busqueda" placeholder="Buscar servicio...">
+                <h1>Bienvenido/a</h1>
+                <input class="input-buscar" type="text" id="inputBusqueda" placeholder="Buscar servicio...">
             </div>
         </section>
-        <section class = "contenedor-servicios">
-            <div class = "contenedor-items">
-                <div class = "item">
-                    <span class = "titulo-item">Kinesiologia musculoesquelética</span>
+        <section id="servicios" class="contenedor-servicios">
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
                     <img src="./img/kinesiologia_musculoesqueletica.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$35.000</span>
-                    <button class = "boton-item" id = "boton-id">Agregar</button>
                 </div>
-                <div class = "item">
-                    <span class = "titulo-item">Neurorrehabilitación adulto</span>
-                    <img src="./img/neurorehabilitacion_adulto.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$35.000</span>
-                    <button class = "boton-item" id = "boton-id">Agregar</button>
-                </div>
-                <div class = "item">
-                    <span class = "titulo-item">Kinesiologia respiratoria</span>
-                    <img src="./img/kine_respiratoria_img.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$35.000</span>
-                    <button class = "boton-item" id = "boton-id">Agregar</button>
-                </div>
-                <div class = "item">
-                    <span class = "titulo-item">Masaje de relajación</span>
-                    <img src="./img/masaje_relajante.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$27.000</span>
-                    <button class = "boton-item" id = "boton-id">Agregar</button>
-                </div>
-                <div class = "item">
-                    <span class = "titulo-item">Masaje descontracturante</span>
-                    <img src="./img/masaje_descontracturante.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$33.000</span>
-                    <button class = "boton-item" id = "boton-id">Agregar</button>
-                </div>
-                <div class = "item">
-                    <span class = "titulo-item">Masaje Craneal</span>
-                    <img src="./img/masaje_craneal.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$20.000</span>
-                    <button class = "boton-item" id = "boton-id">Agregar</button>
-                </div>
-                <div class = "item">
-                    <span class = "titulo-item">Masaje terapéutico</span>
-                    <img src="./img/masaje_kinesiologo.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$35.000</span>
-                    <button class = "boton-item" id = "boton-id">Agregar</button>
-                </div>
-                <div class = "item">
-                    <span class = "titulo-item">Recovery</span>
-                    <img src="./img/botas_recovery.jpg" alt="" class = "img-item">
-                    <span class="precio-item">$45.000</span>
-                    <button class = "boton-item" id = "boton-id" id = "boton-id">Agregar</button>
+                <div>
+                    <h3>Kinesiología musculoesquelética</h3>
+                    <span>$35000</span>
+                    <button id="1" class="btn-agregar agregar-servicio" >Agregar</button>
                 </div>
             </div>
-            <div class = "carrito" id="carrito">
-                <div class = "titulo-carrito">
-                    <h3>Carrito</h3>
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
+                    <img src="./img/neurorehabilitacion_adulto.jpg" alt="imagen kinesiologia_musculoesqueletica" class = "img-item">
                 </div>
-                <div class="carrito-items">
-                    <div class="carrito-total">
-                        <div class="fila">
-                            <strong>Total</strong>
-                            <span class="carrito-precio-total">$0</span>
-                        </div>
-                        <button class="btn-pagar">Pagar</button>
-                    </div>
+                <div>
+                    <h3>Neurorrehabilitación adulto</h3>
+                    <span>$35000</span>
+                    <button id="2" class="btn-agregar agregar-servicio" >Agregar</button>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
+                    <img src="./img/kine_respiratoria_img.jpg" alt="imagen rehabilitacion neurologica" class = "img-item">
+                </div>
+                <div>
+                    <h3>Kinesiología Respiratoria</h3>
+                    <span>$35000</span>
+                    <button id="3" class="btn-agregar agregar-servicio" >Agregar</button>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
+                    <img src="./img/masaje_relajante.jpg" alt="imagen masaje relajacion" class = "img-item">
+                </div>
+                <div>
+                    <h3>Masaje de Relajación</h3>
+                    <span>$27000</span>
+                    <button id="4" class="btn-agregar agregar-servicio" >Agregar</button>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
+                    <img src="./img/masaje_descontracturante.jpg" alt="imagen masaje descontracturante" class = "img-item">
+                </div>
+                <div>
+                    <h3>Masaje Descontracturante</h3>
+                    <span>$30000</span>
+                    <button id="5" class="btn-agregar agregar-servicio" >Agregar</button>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
+                    <img src="./img/masaje_craneal.jpg" alt="imagen masaje craneal" class = "img-item">
+                </div>
+                <div>
+                    <h3>Masaje Craneal</h3>
+                    <span>$20000</span>
+                    <button id="6" class="btn-agregar agregar-servicio">Agregar</button>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
+                    <img src="./img/masaje_kinesiologo.jpg" alt="imagen masaje terapeutico" class = "img-item">
+                </div>
+                <div>
+                    <h3>Masaje Terapéutico</h3>
+                    <span>$35000</span>
+                    <button id="7" class="btn-agregar agregar-servicio" >Agregar</button>
+                </div>
+            </div>
+            <div>
+                <div class="contenedor-servicio" style="display: block;">
+                    <img src="./img/botas_recovery.jpg" alt="imagen uso botas presoterapia" class = "img-item">
+                </div>
+                <div>
+                    <h3>Recovery</h3>
+                    <span>$45000</span>
+                    <button id="8" class="btn-agregar agregar-servicio" >Agregar</button>
                 </div>
             </div>
         </section>
+        <section class="flex-carrito">
+            <div class="carrito" id="carritoid">
+                <div class="header-carrito">
+                    <h4>Carrito</h4>
+                </div>
+                <div class="carrito-items"></div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Total</strong>
+                        <span class="carrito-precio-total"></span>
+                    </div>
+                    <button class="btn-pagar">Pagar</button>
+                    <button class="btn-limpiar-carrito">Limpiar Carrito</button>
+                </div>
+            </div>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <p>Gracias por confiar en nosotros. Nos pondremos en contacto para agendar.</p>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="piedepagina">
@@ -114,6 +152,8 @@
             <h3><span>PRO</span>yecto KINE</h3>
         </div>
     </footer>
-    <script>"./main.js"</script>
+    <script src="./main.js"></script>
 </body>
 </html>
+
+
